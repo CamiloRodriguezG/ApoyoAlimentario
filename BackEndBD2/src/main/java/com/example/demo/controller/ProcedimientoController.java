@@ -2,11 +2,14 @@ package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.ErrorPL;
+import com.example.demo.service.ListadoObjeto;
 import com.example.demo.service.impl.ProcedimientoServiceImpl;
 
 @CrossOrigin(origins = "*")
@@ -53,15 +56,16 @@ public class ProcedimientoController {
         }
     }
 
-    @PostMapping("/obtenerListado")
-    public ErrorPL obtenerListado(){
-        ErrorPL errorPL;
+    @GetMapping("/obtenerListado/{id_periodo}")
+    public ListadoObjeto obtenerListado(@PathVariable(value = "id_periodo") String id_periodo){
+        ListadoObjeto listado;
         try {
-            errorPL = procedimientoService.generarListado();
-            return errorPL;
+            listado = procedimientoService.generarListado(id_periodo);
+            return listado;
         } catch (Exception e) {
-            errorPL = new ErrorPL(999, e.getMessage());
-            return errorPL;
+            ErrorPL errorPL = new ErrorPL(999, e.getMessage());
+            listado = new ListadoObjeto(errorPL, null);
+            return listado;
         }
     }
     

@@ -6,5 +6,5 @@ public interface ProcedimientoService {
     ErrorPL prueba();
     ErrorPL asignarBeneficios();
     ErrorPL asignarPuntajes();
-    ErrorPL generarListado();
+    ListadoObjeto generarListado(String idPeriodo);
 }
