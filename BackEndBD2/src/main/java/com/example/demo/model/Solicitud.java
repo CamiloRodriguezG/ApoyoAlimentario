@@ -32,11 +32,9 @@ public class Solicitud {
     @Column
     private String linkdocumentos;
     /* FOREIGN KEYS */
-    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "id_codigo")
-    private Estudiante id_codigo; 
-    @JsonIgnore
+    private Estudiante id_codigo;
     @ManyToOne
     @JoinColumn(name = "id_periodo")
     private Convocatoria id_periodo;

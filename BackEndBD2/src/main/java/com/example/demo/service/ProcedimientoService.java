@@ -5,4 +5,6 @@ import com.example.demo.model.ErrorPL;
 public interface ProcedimientoService {
     ErrorPL prueba();
     ErrorPL asignarBeneficios();
+    ErrorPL asignarPuntajes();
+    ErrorPL generarListado();
 }

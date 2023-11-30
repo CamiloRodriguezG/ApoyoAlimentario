@@ -52,5 +52,17 @@ public class ProcedimientoServiceImpl implements ProcedimientoService{
         return new ErrorPL(codigo, mensaje);
 
     }
+
+    @Override
+    public ErrorPL asignarPuntajes() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'asignarPuntajes'");
+    }
+
+    @Override
+    public ErrorPL generarListado() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'generarListado'");
+    }
     
 }

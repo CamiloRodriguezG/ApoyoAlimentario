@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apoyo Alimentario</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="Escudo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="Escudo_Horizontal.png" alt="Escudo" width="300" height="100">
+    </div>
+    <div class="form3">
+        <div>Ingrese Id solicitud :</div>
+        <form class="student-check-form">
+            <input type="number" placeholder="ID Solicitud" id="id_solicitud"/>
+        </form>
+
+        <form class="student-check-form">
+            <input type="text" placeholder="ID evaluador" id="id_evaluador"/>
+        </form>
+
+        <div>
+            <h2>Documentos</h2>
+            <form class="additional-info-form">
+                <br>
+                <label for="sostieneHogar">Sostiene el Hogar:</label>
+                <select id="sostieneHogar">
+                  <option value="S">Sí</option>
+                  <option value="N">No</option>
+                </select>
+                <br>
+                <label for="residenciaFueraBogota">Residencia Familiar Fuera de Bogotá:</label>
+                <select id="residenciaFueraBogota">
+                  <option value="S">Sí</option>
+                  <option value="N">No</option>
+                </select>
+                <br>
+                <label for="autosustenta">Se Autosustenta:</label>
+                <select id="autosustenta">
+                  <option value="S">Sí</option>
+                  <option value="N">No</option>
+                </select>
+                <br>
+                <label for="aCargoDeMasPersonas">Está a Cargo de Más Personas:</label>
+                <select id="aCargoDeMasPersonas">
+                  <option value="S">Sí</option>
+                  <option value="N">No</option>
+                </select>
+                <br>
+                <label for="viveCasaEmpleador">Vive en Casa del Empleador:</label>
+                <select id="viveCasaEmpleador">
+                  <option value="S">Sí</option>
+                  <option value="N">No</option>
+                </select>
+                <br>
+                <label for="condicionEspecial">Tiene Alguna Condición Especial:</label>
+                <select id="condicionEspecial">
+                  <option value="S">Sí</option>
+                  <option value="N">No</option>
+                </select>
+                <br>
+                <label for="zonaVulnerabilidad">Reside en Zonas de Alta Vulnerabilidad:</label>
+                <select id="zonaVulnerabilidad">
+                  <option value="S">Sí</option>
+                  <option value="N">No</option>
+                </select>
+                <br>
+                <label for="discapacidad">Tiene Alguna Discapacidad:</label>
+                <select id="discapacidad">
+                  <option value="S">Sí</option>
+                  <option value="N">No</option>
+                </select>
+                <br>
+                <label for="problemasAlimentacion">Problemas de Alimentación:</label>
+                <select id="problemasAlimentacion">
+                  <option value="S">Sí</option>
+                  <option value="N">No</option>
+                </select>
+                <br>
+                <button type="button" id="actInfoBtn">Enviar Información</button>
+              </form>
+              <br>
+              <script src="verificacion.js"></script>
+          </body>
+          </html>

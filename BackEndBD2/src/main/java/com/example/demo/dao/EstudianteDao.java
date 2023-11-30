@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.model.Estudiante;
 
-
+@Service
 public interface EstudianteDao extends CrudRepository<Estudiante, String>{
     
 }

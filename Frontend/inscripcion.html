@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Apoyo Alimentario</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="Escudo.png">
+        <link rel="stylesheet" href="style.css">
+      </head>
+<body>
+    <div style="text-align: center;">
+        <img src="Escudo_Horizontal.png" alt="Escudo" width="300" height="100">
+    </div>
+    <div class="form2">
+        Bienvenido al sistema de inscripción para el apoyo alimentario. A continuacion encontraras la lista de los documentos necesarios para realizar la solicitud del programa de apoyo alimentario:<br>
+        <br>
+    <div class="requisitos">
+        - Formulario de Solicitud de Adjudicación del Subsidio e ingreso al Programa Apoyo Alimentario diligenciado completamente.<br>
+        - Carta dirigida al Director (a) del Centro Bienestar Institucional donde explique de manera clara y expresa las razones por las cuales requiere el apoyo alimentario.<br>
+        - Certificado de estratificación del lugar de residencia del estudiante expedido por Catastro o Supercade o por las Alcaldías Municipales para quienes residen fuera de Bogotá. <br>
+        - Fotocopia de la factura de un recibo de servicio público (que corresponda a la vigencia de la convocatoria) del domicilio donde reside el estudiante (agua, luz, gas o teléfono), que coincida con la dirección del certificado de estratificación<br>
+        - Fotocopia del Recibo de Pago de la Universidad debidamente cancelado.<br>
+        - Certificado de desplazamiento forzoso por violencia del Departamento de la Protección Social- DPS(si aplica).<br>
+        - Si es padre/madre, certificado Civil de nacimiento de los hijos<br>
+        - Certificado de Discapacidad Medica de la Junta de Invalidez, avalado por el médico de Bienestar Institucional de la Universidad Distrital Francisco José de Caldas. <br>
+        <br>
+    </div>
+    <h2>Información Adicional</h2>
+    <form class="additional-info-form">
+      <input type="number" placeholder="Ingresos Familiares" id="ingresosFamiliares"/>
+      <br>
+      <label for="sostieneHogar">Sostiene el Hogar:</label>
+      <select id="sostieneHogar">
+        <option value="S">Sí</option>
+        <option value="N">No</option>
+      </select>
+      <br>
+      <label for="residenciaFueraBogota">Residencia Familiar Fuera de Bogotá:</label>
+      <select id="residenciaFueraBogota">
+        <option value="S">Sí</option>
+        <option value="N">No</option>
+      </select>
+      <br>
+      <label for="autosustenta">Se Autosustenta:</label>
+      <select id="autosustenta">
+        <option value="S">Sí</option>
+        <option value="N">No</option>
+      </select>
+      <br>
+      <label for="aCargoDeMasPersonas">Está a Cargo de Más Personas:</label>
+      <select id="aCargoDeMasPersonas">
+        <option value="S">Sí</option>
+        <option value="N">No</option>
+      </select>
+      <br>
+      <label for="viveCasaEmpleador">Vive en Casa del Empleador:</label>
+      <select id="viveCasaEmpleador">
+        <option value="S">Sí</option>
+        <option value="N">No</option>
+      </select>
+      <br>
+      <label for="condicionEspecial">Tiene Alguna Condición Especial:</label>
+      <select id="condicionEspecial">
+        <option value="S">Sí</option>
+        <option value="N">No</option>
+      </select>
+      <br>
+      <label for="zonaVulnerabilidad">Reside en Zonas de Alta Vulnerabilidad:</label>
+      <select id="zonaVulnerabilidad">
+        <option value="S">Sí</option>
+        <option value="N">No</option>
+      </select>
+      <br>
+      <label for="discapacidad">Tiene Alguna Discapacidad:</label>
+      <select id="discapacidad">
+        <option value="S">Sí</option>
+        <option value="N">No</option>
+      </select>
+      <br>
+      <label for="problemasAlimentacion">Problemas de Alimentación:</label>
+      <select id="problemasAlimentacion">
+        <option value="S">Sí</option>
+        <option value="N">No</option>
+      </select>
+      <br>
+      <input type="text" placeholder="Valor de Matrícula" id="valorMatricula"/>
+      <button type="button" id="enviarInfoBtn">Enviar Información</button>
+    </form>
+    <br>
+    <button type="button" id="verificarBtn">Adjuntar Documentos</button>
+    </div>
+    <script src="inscripcion.js"></script>
+</body>
+</html>

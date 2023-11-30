@@ -40,5 +40,29 @@ public class ProcedimientoController {
             return errorPL;
         }
     }
+
+    @PostMapping("/asigpuntajes")
+    public ErrorPL asignarPuntajes(){
+        ErrorPL errorPL;
+        try {
+            errorPL = procedimientoService.asignarPuntajes();
+            return errorPL;
+        } catch (Exception e) {
+            errorPL = new ErrorPL(999, e.getMessage());
+            return errorPL;
+        }
+    }
+
+    @PostMapping("/obtenerListado")
+    public ErrorPL obtenerListado(){
+        ErrorPL errorPL;
+        try {
+            errorPL = procedimientoService.generarListado();
+            return errorPL;
+        } catch (Exception e) {
+            errorPL = new ErrorPL(999, e.getMessage());
+            return errorPL;
+        }
+    }
     
 }
